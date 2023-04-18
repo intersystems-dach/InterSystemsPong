@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #0a2a43;
+}
+body {
+    background-color: #ffebcd;
+    min-height: 25000px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+section img {
+    height: 300px;
+    object-fit: cover;
+    pointer-events: none;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+}
+#ballImg {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+#counter1 {
+    left: 20px;
+    top: 0px;
+    position: fixed;
+    font-size: 50px;
+    display: block;
+}
+#counter2 {
+    display: block;
+    right: 20px;
+    top: 0px;
+    position: fixed;
+    font-size: 50px;
+}
+
+.introductionKeys {
+    position: fixed;
+    display: block;
+    font-size: 50px;
+}
+
+#botButton {
+    top: 20px;
+    left: 500px;
+    position: fixed;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 15px;
+}
