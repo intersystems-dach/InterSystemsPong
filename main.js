@@ -4,7 +4,8 @@ if (
         navigator.userAgent
     )
 ) {
-    //window.location.href = 'mobile/index.html';
+    alert('Mobile version is not available yet. Please use desktop version.');
+    return;
 }
 
 const right = document.getElementById('right');
