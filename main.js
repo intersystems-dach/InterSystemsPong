@@ -1,13 +1,3 @@
-// switch to mobile version if mobile device
-if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-    )
-) {
-    alert('Mobile version is not available yet. Please use desktop version.');
-    return;
-}
-
 const right = document.getElementById('right');
 const left = document.getElementById('left');
 
