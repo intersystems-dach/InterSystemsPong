@@ -25,6 +25,10 @@
 
 ---
 
+Try it out [here](https://phil1436.github.io/InterSystemsPong/).
+
+---
+
 -   [Bugs](#bugs)
 
 ---
