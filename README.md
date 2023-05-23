@@ -9,8 +9,8 @@
 
 <!-- Badges -->
 <div align="center">
-   <a href="https://github.com/phil1436/InterSystemsPong/releases">
-       <img src="https://img.shields.io/github/v/release/phil1436/InterSystemsPong?display_name=tag" alt="current realease" />
+   <a href="https://phil1436.github.io/InterSystemsPong/">
+       <img src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fphil1436.github.io%2FInterSystemsPong%2F" alt="website status" />
    </a>
    <a href="https://github.com/phil1436/InterSystemsPong/blob/master/LICENSE">
        <img src="https://img.shields.io/github/license/phil1436/InterSystemsPong" alt="license" />
