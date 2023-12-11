@@ -8,6 +8,7 @@ body {
     min-height: 25000px;
     max-width: 100%;
     overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a:link {
@@ -48,15 +49,55 @@ section img {
     font-size: 50px;
 }
 
-#botButton {
-    top: 20px;
-    left: 500px;
-    position: fixed;
+.myBtn {
     border: none;
-    background: none;
+    background-color: #0a2a43;
     cursor: pointer;
     margin: 0;
     padding: 0;
     display: block;
     font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0a2a43;
+    margin-top: 20px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.myBtn:hover {
+    background-color: #ffebcd;
+    color: #0a2a43;
+}
+
+#logoImg {
+    position: fixed;
+    width: 30%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 0%);
+}
+
+#eg {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0%);
+    font-weight: bold;
+    opacity: 0.5;
 }

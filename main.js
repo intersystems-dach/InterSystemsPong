@@ -44,10 +44,8 @@ function initGame() {
     BALLSPEED = 10;
     p2 = 80;
     p1 = 80;
-    let introductionKeys = document.getElementsByClassName('introductionKeys');
-    for (const element of introductionKeys) {
-        element.style.display = 'block';
-    }
+    showIntroductionKeys();
+    eg();
 
     if (botMode) {
         document.getElementById('introductionI').style.display = 'none';
@@ -70,7 +68,7 @@ function initGame() {
     document.getElementById('botButton').style.left =
         window.innerWidth / 2 - 50 + 'px';
 
-    setTimeout(hideIntroductionKeys, 5000);
+    setTimeout(hideIntroductionKeys, 8000);
 
     start();
     loopIntervalID = setInterval(loop, 1000 / 60);
@@ -98,11 +96,23 @@ function stopGame() {
     hideIntroductionKeys();
 }
 
+function showIntroductionKeys() {
+    let introductionKeys = document.getElementsByClassName('introductionKeys');
+    for (const element of introductionKeys) {
+        element.style.display = 'block';
+    }
+    //let logoImg = document.getElementById('logoImg');
+    //logoImg.style.display = 'block';
+}
+
 function hideIntroductionKeys() {
     let introductionKeys = document.getElementsByClassName('introductionKeys');
     for (const element of introductionKeys) {
         element.style.display = 'none';
     }
+
+    //let logoImg = document.getElementById('logoImg');
+    //logoImg.style.display = 'none';
 }
 
 function start() {
@@ -214,6 +224,32 @@ function draw() {
 
 function toggleGameMode() {
     botMode = !botMode;
+    document.getElementById('botButton').innerHTML = botMode
+        ? '2 Player Mode'
+        : 'BOT Mode';
     stopGame();
     initGame();
+}
+
+function pauseGame() {
+    document.getElementById('pauseButton').innerHTML = 'Resume';
+    document.getElementById('pauseButton').onclick = resumeGame;
+    clearInterval(loopIntervalID);
+    showIntroductionKeys();
+}
+
+function resumeGame() {
+    document.getElementById('pauseButton').innerHTML = 'Pause';
+    document.getElementById('pauseButton').onclick = pauseGame;
+    loopIntervalID = setInterval(loop, 1000 / 60);
+    setTimeout(hideIntroductionKeys, 4000);
+}
+
+function eg() {
+    const r = Math.random();
+    if (r > 0.97) {
+        document.getElementById('eg').innerHTML = 'Philipp was here';
+    } else {
+        document.getElementById('eg').innerHTML = '';
+    }
 }
