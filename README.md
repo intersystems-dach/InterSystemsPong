@@ -29,4 +29,4 @@ Try it out [here](https://intersystems-dach.github.io/InterSystemsPong/).
 
 ---
 
-by [Philipp B.](https://github.com/phil1436)
+by [Philipp B.](https://github.com/cophilot)
